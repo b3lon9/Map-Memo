@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-
+    <!--common-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--atmosphere-->
+    <color name="amp_level1">#FFF8DE</color>
+    <color name="amp_level2">#D6E8DB</color>
+    <color name="amp_level3">#C1D0B5</color>
+    <color name="amp_level4">#99A98F</color>
+
+    <!--function-->
+    <color name="fun_level1">#D0C9C0</color>
+    <color name="fun_level2">#EFEAD8</color>
+    <color name="fun_level3">#6D8B74</color>
+    <color name="fun_level4">#5F7161</color>
+
+    <!--
+전체적 분위기
+#99A98F
+#C1D0B5
+#D6E8DB
+#FFF8DE
+
+기능 색상
+#5F7161
+#6D8B74
+#EFEAD8
+#D0C9C0
+    -->
 </resources>

@@ -4,14 +4,37 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World"
-            android:textSize="34sp" />
+        <ActionMenuView
+            android:id="@+id/main_top"
+            style="@style/MainLayout"
+            android:layout_weight="0.08"
+            android:background="@color/amp_level4"/>
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_middle"
+            style="@style/MainLayout"
+            android:layout_weight="0.8"
+            android:background="@color/amp_level2"/>
+
+        <RadioGroup
+            android:id="@+id/main_bottom"
+            style="@style/Main.RadioGroup"
+            android:layout_weight="0.12"
+            android:background="@color/amp_level3"
+            android:checkedButton="@id/tab_map">
+            
+            <RadioButton
+                android:id="@+id/tab_map"
+                style="@style/MainRadioButton"
+                android:text="@string/main_tab_map" />
+
+            <RadioButton
+                android:id="@+id/tab_setting"
+                style="@style/MainRadioButton"
+                android:text="@string/main_tab_setting" />
+        </RadioGroup>
     </LinearLayout>
 </layout>
