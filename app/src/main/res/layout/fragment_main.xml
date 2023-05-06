@@ -13,7 +13,7 @@
             android:layout_weight="0.08"
             android:background="@color/amp_level4"/>
 
-        <androidx.viewpager.widget.ViewPager
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/main_middle"
             style="@style/MainLayout"
             android:layout_weight="0.8"
