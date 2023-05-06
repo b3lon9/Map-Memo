@@ -10,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.databinding.DataBindingUtil
 import com.b3lon9.mapmemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        // setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
 
